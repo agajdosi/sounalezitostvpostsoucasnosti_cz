@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sounáležitost v postsoučasnosti</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;   /* výchozí: mobil = pod sebe */
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      gap: 2rem;               /* mezera mezi obrázkem a textem */
+    }
+
+    /* Obrázek */
+    .image {
+      width: 100%;
+      max-height: 50vh;        /* aby se vždy vešel na první obrazovku */
+      object-fit: contain;
+      display: block;
+    }
+
+    /* Text */
+    .text {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    /* Větší obrazovky (monitor, 16:9 atd.) */
+    @media (min-width: 900px) {
+      .container {
+        flex-direction: row;        /* vedle sebe */
+        align-items: center;
+        justify-content: center;
+      }
+
+      .image {
+        width: 50%;
+        max-height: 80vh;
+      }
+
+      .text {
+        width: 50%;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="bg.png" alt="Obrázek" class="image">
+
+    <div class="text">
+topné spirály v tvých očích</br>
+šeptám ti příběhy, aby cesta lépe ubíhala</br>
+vysoké věže vodorovně přepažené</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rámují krajinu těžkou mřížkou</br>
+ty a já tvoříme řetězec</br>
+hluboké oblouky ohýbaných vln</br>
+z pokrývky signálu</br>
+se probouzíme kokrháním silnic a dálnic</br>
+</br>
+těžký dotyk pneumatik hloubí asfaltová koryta</br> 
+kdybych se natáhla, dosáhnu až do Prahy</br>
+devadesát kilometrů zatrubněného těla</br>
+mezi kočičími hlavami zásilkové boxy krys</br>
+strategie schovaných semínek</br>
+aby budoucnost byla naše</br>
+</br>
+na holubích křídlech prach ze silnice, kapky benzínových kaluží</br>
+dělnictvo pohybu</br>
+vysokorychlostní čas</br>
+ani mapy neví, kudy teče</br>
+tady je to krásné, tady nic není</br>
+prohledám vnitřek skály,  zavolám dopravní tepny v okolí</br>
+</br>
+dutá těla s cizími vnitřnostmi</br>
+rostou rychle - často ve více kusech</br>
+od devatenáctého století kreslím do památníku tvého těla</br>
+už skoro dochází místo</br>
+evropská síť se klepe, pavouk se blíží</br>  
+již žádný průměr, již žádná promarněná příležitost, hlásáme ve stínu skladových hal</br>
+usazující se sediment obarvuje hladinu do temné hluboké modré</br>
+    </div>
+  </div>
+
+</body>
+</html>
