@@ -39,11 +39,12 @@
       display: block;
     }
 
-    /* Text */
-    .text {
-      font-size: 1rem;
-      text-align: justify;
-    }
+.text {
+  font-size: 1rem;
+  text-align: justify;
+  width: 100%;
+  max-width: 50vh; /* přibližně šířka odpovídající výšce obrázku */
+}
 
     /* Větší obrazovky (monitor, 16:9 atd.) */
     @media (min-width: 900px) {
@@ -67,9 +68,10 @@
 </head>
 <body>
 
-  <div class="container">
+<div class="container">
+  <div class="content">
     <img src="bg_low_q.jpg" alt="Obrázek" class="image">
-  
+
     <div class="text">
 topné spirály v tvých očích</br>
 šeptám ti příběhy, aby cesta lépe ubíhala</br>
@@ -101,7 +103,8 @@ už skoro dochází místo</br>
 evropská síť se klepe, pavouk se blíží</br>  
 již žádný průměr, již žádná promarněná příležitost, hlásáme ve stínu skladových hal</br>
 usazující se sediment obarvuje hladinu do temné hluboké modré</br>
-    </div>
+ </div>
   </div>
+</div>
 </body>
 </html>
