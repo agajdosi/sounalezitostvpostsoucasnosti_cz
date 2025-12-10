@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -25,33 +24,36 @@
     .container {
       min-height: 100vh;
       display: flex;
-      flex-direction: column;   /* výchozí: mobil = pod sebe */
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;   /* levá hrana všech prvků */
       justify-content: center;
       padding: 1rem;
-      gap: 2rem;               /* mezera mezi obrázkem a textem */
+      gap: 2rem;
     }
 
-    /* Obrázek */
+    /* Obrázek – může být užší než text */
     .image {
-      width: 100%;
-      max-height: 50vh;        /* aby se vždy vešel na první obrazovku */
+      width: auto;
+      max-width: 100%;
+      max-height: 50vh;
       object-fit: contain;
       display: block;
     }
 
-    /* Text */
-  .text {
-  font-size: 1rem;
-  text-align: justify;
-  align-self: flex-start;   /* začne na stejném levém okraji jako obrázek */
-  width: 100%;              /* text může být širší než obrázek */
-}
+    /* Text – roztahuje se jen doprava od obrázku */
+    .text {
+      font-size: 1rem;
+      text-align: justify;
+      text-justify: inter-word;
+      hyphens: auto;
 
-    /* Větší obrazovky (monitor, 16:9 atd.) */
+      width: 100%;            /* text je širší než obrázek */
+    }
+
+    /* DESKTOP */
     @media (min-width: 900px) {
       .container {
-        flex-direction: row;        /* vedle sebe */
+        flex-direction: row;
         align-items: center;
         justify-content: center;
       }
@@ -63,7 +65,6 @@
 
       .text {
         width: 50%;
-        text-align: left;
       }
     }
   </style>
@@ -74,36 +75,36 @@
     <img src="bg_low_q.jpg" alt="Obrázek" class="image">
 
     <div class="text">
-topné spirály v tvých očích</br>
-šeptám ti příběhy, aby cesta lépe ubíhala</br>
-vysoké věže vodorovně přepažené</br>
-rámují krajinu těžkou mřížkou</br>
-ty a já tvoříme řetězec</br>
-hluboké oblouky ohýbaných vln</br>
-z pokrývky signálu</br>
-se probouzíme kokrháním silnic a dálnic</br>
-</br>
-těžký dotyk pneumatik hloubí asfaltová koryta</br> 
-kdybych se natáhla, dosáhnu až do Prahy</br>
-devadesát kilometrů zatrubněného těla</br>
-mezi kočičími hlavami zásilkové boxy krys</br>
-strategie schovaných semínek</br>
-aby budoucnost byla naše</br>
-</br>
-na holubích křídlech prach ze silnice, kapky benzínových kaluží</br>
-dělnictvo pohybu</br>
-vysokorychlostní čas</br>
-ani mapy neví, kudy teče</br>
-tady je to krásné, tady nic není</br>
-prohledám vnitřek skály,  zavolám dopravní tepny v okolí</br>
-</br>
-dutá těla s cizími vnitřnostmi</br>
-rostou rychle - často ve více kusech</br>
-od devatenáctého století kreslím do památníku tvého těla</br>
-už skoro dochází místo</br>
-evropská síť se klepe, pavouk se blíží</br>  
-již žádný průměr, již žádná promarněná příležitost, hlásáme ve stínu skladových hal</br>
-usazující se sediment obarvuje hladinu do temné hluboké modré</br>
+      topné spirály v tvých očích<br>
+      šeptám ti příběhy, aby cesta lépe ubíhala<br>
+      vysoké věže vodorovně přepažené<br>
+      rámují krajinu těžkou mřížkou<br>
+      ty a já tvoříme řetězec<br>
+      hluboké oblouky ohýbaných vln<br>
+      z pokrývky signálu<br>
+      se probouzíme kokrháním silnic a dálnic<br><br>
+
+      těžký dotyk pneumatik hloubí asfaltová koryta<br>
+      kdybych se natáhla, dosáhnu až do Prahy<br>
+      devadesát kilometrů zatrubněného těla<br>
+      mezi kočičími hlavami zásilkové boxy krys<br>
+      strategie schovaných semínek<br>
+      aby budoucnost byla naše<br><br>
+
+      na holubích křídlech prach ze silnice, kapky benzínových kaluží<br>
+      dělnictvo pohybu<br>
+      vysokorychlostní čas<br>
+      ani mapy neví, kudy teče<br>
+      tady je to krásné, tady nic není<br>
+      prohledám vnitřek skály, zavolám dopravní tepny v okolí<br><br>
+
+      dutá těla s cizími vnitřnostmi<br>
+      rostou rychle - často ve více kusech<br>
+      od devatenáctého století kreslím do památníku tvého těla<br>
+      už skoro dochází místo<br>
+      evropská síť se klepe, pavouk se blíží<br>
+      již žádný průměr, již žádná promarněná příležitost, hlásáme ve stínu skladových hal<br>
+      usazující se sediment obarvuje hladinu do temné hluboké modré<br>
     </div>
   </div>
 
