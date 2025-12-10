@@ -39,12 +39,11 @@
       display: block;
     }
 
-.text {
-  font-size: 1rem;
-  text-align: justify;
-  width: 100%;
-  max-width: 50vh; /* přibližně šířka odpovídající výšce obrázku */
-}
+    /* Text */
+    .text {
+      font-size: 1rem;
+      text-align: center;
+    }
 
     /* Větší obrazovky (monitor, 16:9 atd.) */
     @media (min-width: 900px) {
@@ -61,15 +60,14 @@
 
       .text {
         width: 50%;
-        text-align: justify;
+        text-align: left;
       }
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <div class="content">
+  <div class="container">
     <img src="bg_low_q.jpg" alt="Obrázek" class="image">
 
     <div class="text">
@@ -103,8 +101,8 @@ už skoro dochází místo</br>
 evropská síť se klepe, pavouk se blíží</br>  
 již žádný průměr, již žádná promarněná příležitost, hlásáme ve stínu skladových hal</br>
 usazující se sediment obarvuje hladinu do temné hluboké modré</br>
- </div>
+    </div>
   </div>
-</div>
+
 </body>
 </html>
