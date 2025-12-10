@@ -40,10 +40,12 @@
     }
 
     /* Text */
-    .text {
-      font-size: 1rem;
-      text-align: center;
-    }
+  .text {
+  font-size: 1rem;
+  text-align: justify;
+  align-self: flex-start;   /* začne na stejném levém okraji jako obrázek */
+  width: 100%;              /* text může být širší než obrázek */
+}
 
     /* Větší obrazovky (monitor, 16:9 atd.) */
     @media (min-width: 900px) {
